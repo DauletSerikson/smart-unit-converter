@@ -2,38 +2,41 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Smart Unit Converter</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Unit Converter (NL)</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <main class="container">
-    <h1>Smart Unit Converter</h1>
-    <p class="hint">Примеры: <code>5 ft 7 in to cm</code>, <code>2.4kg -> lb</code>, <code>100 km/h to m/s</code>, <code>25 c в f</code></p>
+    <h1>Smart Unit Converter (NL)</h1>
+    <p class="hint">Примеры: <code>5 ft 7 in to cm</code>, <code>2.4 kg -> lb</code>, <code>100 km/h в m/s</code>, <code>32 F to C</code></p>
 
-    <div class="row">
-      <input id="query" type="text" placeholder="Например: 5 ft 7 in to cm" />
-      <button id="convertBtn">Convert</button>
-    </div>
+    <form id="form">
+  <input id="query" type="text" placeholder="Введите запрос... (например, 5 ft 7 in to cm)" autocomplete="off"/>
+  <button type="submit" class="btn">Convert</button>
+  <button type="button" id="copyLink" class="btn btn-secondary" title="Копировать ссылку на текущий запрос">Copy Link</button>
+</form>
 
-    <div id="result" class="result" aria-live="polite">Введите выражение и нажмите Convert</div>
+<section id="result" class="card" aria-live="polite"></section>
 
-    <section class="history">
-      <h2>История</h2>
-      <ul id="historyList"></ul>
+
+    <section class="card">
+      <h2>Последние запросы</h2>
+      <ul id="history"></ul>
     </section>
 
-    <div class="share">
-      <button id="copyLinkBtn">Скопировать ссылку на результат</button>
-      <span id="copied" class="copied" hidden>Ссылка скопирована!</span>
-    </div>
-
-    <footer>
+<footer>
       <a href="https://github.com/DauletSerikson/smart-unit-converter" target="_blank" rel="noreferrer">GitHub</a>
     </footer>
   </main>
 
-  <script src="./units.js"></script>
-  <script src="./main.js"></script>
+  <script src="units.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
+<!--
+  Smart Unit Converter (NL)
+  Автор: Daulet Serikuky
+  GitHub: https://github.com/DauletSerikson/smart-unit-converter
+  Год: 2025
+-->
