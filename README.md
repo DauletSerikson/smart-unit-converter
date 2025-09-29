@@ -6,7 +6,7 @@
 **Демо:** https://DauletSerikson.github.io/smart-unit-converter/  
 **Репозиторий:** https://github.com/DauletSerikson/smart-unit-converter
 
-![screenshot](assets/screenshot.png)
+![screenshot](image.png)
 
 ---
 
