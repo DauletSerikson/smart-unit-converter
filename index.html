@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Unit Converter</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Smart Unit Converter</h1>
+    <p class="hint">Примеры: <code>5 ft 7 in to cm</code>, <code>2.4kg -> lb</code>, <code>100 km/h to m/s</code>, <code>25 c в f</code></p>
+
+    <div class="row">
+      <input id="query" type="text" placeholder="Например: 5 ft 7 in to cm" />
+      <button id="convertBtn">Convert</button>
+    </div>
+
+    <div id="result" class="result" aria-live="polite">Введите выражение и нажмите Convert</div>
+
+    <section class="history">
+      <h2>История</h2>
+      <ul id="historyList"></ul>
+    </section>
+
+    <div class="share">
+      <button id="copyLinkBtn">Скопировать ссылку на результат</button>
+      <span id="copied" class="copied" hidden>Ссылка скопирована!</span>
+    </div>
+
+    <footer>
+      <a href="https://github.com/DauletSerikson/smart-unit-converter" target="_blank" rel="noreferrer">GitHub</a>
+    </footer>
+  </main>
+
+  <script src="./units.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
